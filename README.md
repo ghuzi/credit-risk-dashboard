@@ -78,6 +78,13 @@ Monthly income is converted from PKR to USD at a fixed approximate rate before s
 | Calibration | Sigmoid (Platt) calibration fitted on out-of-fold scores, chosen over isotonic for being equally accurate and smoother |
 | Explainability | SHAP (TreeExplainer) |
 
+## Notebook
+The full training workflow (cleaning, EDA, model comparison, tuning, calibration and final evaluation) is in [`notebooks/Fintech_Loan.ipynb`](notebooks/Fintech_Loan.ipynb).
+It was written in Google Colab and reads the Kaggle file `cs-training.csv.zip` from Google Drive, so download the dataset from Kaggle first if you want to re-run it.
+
+[Open in Colab](https://colab.research.google.com/github/ghuzi/credit-risk-dashboard/blob/main/notebooks/Fintech_Loan.ipynb)
+
+
 **Model comparison (5-fold cross-validation on the training set):**
 
 | Model | PR-AUC | ROC-AUC |
